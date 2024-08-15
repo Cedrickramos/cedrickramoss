@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p id="message">Click the button to introduce myself.</p>
+        <button onclick="changeMessage()">Click Me!</button>
+    </div>
+
+    <script>
+        function changeMessage() {
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = 'Hi, I am Cedrick Allen Ramos.';
+        }
+    </script>
+
+<script>
+  function changeImage() {
+      const imageElement = document.getElementById('image');
+      imageElement.src = 'https://via.placeholder.com/300?text=New+Image';
+  }
+</script>
+</body>
+</html>
